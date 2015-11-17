@@ -178,7 +178,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #workwrap {	
-	background: url(../img/work.jpg) no-repeat center top;
+	background: url(../img/portfolio/01.JPG) no-repeat center top;
+    opacity: .8;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
@@ -213,7 +214,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {	
-	background: url(../img/about.jpg) no-repeat center top;
+	/*background: url(../img/elmer.jpg) no-repeat center top;*/
+    background-color: #2f2f2f;
 	margin-top: -70px;
 	padding-top: 250px;
 	text-align:center;
