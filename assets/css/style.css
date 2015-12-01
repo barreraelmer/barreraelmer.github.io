@@ -65,6 +65,14 @@
     padding: 80px;
 }
 
+.border {
+    background-color: white;
+    margin: 30px;
+}
+
+.left-align {
+    text-align: left;
+}
 /* ==========================================================================
    General styles
    ========================================================================== */
@@ -240,12 +248,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gallery */
 .gallery {
-    margin: 10px;
+    margin: 20px;
     background-color: white;
 }
 
 .gallery img:hover {
 	opacity: 0.4;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+}
+
+.link img:hover {
+    opacity: 0.4;
 }
 
 /* Project */
