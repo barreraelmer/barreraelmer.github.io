@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,500,600|Work+Sans:400,500,600');
+
+/* Basic Styles */
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+
+}
+@media (min-width: 50em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  padding: 0rem 0rem 0rem 0rem;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: .8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+a:hover {
+  color: #2e61ff;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.align-right {
+  text-align: right;
+}
+/* Header */
+
+/* Masthead */
+.masthead {
+  margin-bottom: .8rem;
+  font-size: 1rem;
+  color: #333;
+  height: 60px;
+}
+.masthead:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 1px;
+  margin: 3rem auto;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  font-weight: 500;
+}
+.nav li + li {
+  margin-left: 1.2rem;
+}
+
+@media (min-width: 52em) {
+  .masthead {
+    padding-top: .1rem;
+    text-align: right;
+  }
+  .masthead-title {
+    float: left;
+  }
+}
+
+/* Intro */
+.intro {
+  margin-top: -80px;
+}
+.intro > h1 {
+  font-size: 3.5rem;
+}
+
+.intro > h3 {
+  font-weight: 400;
+}
+
+.intro > h3 > a {
+  color: #2e61ff;
+  font-weight: 500;
+}
+
+.intro > h3 > a:hover {
+  color: #555;
+}
+
+/* Work */
+
+.wrapper-blue {
+  background-color: #f3f4f8;
+  width: 100%;
+  padding: 120px 0;
+
+}
+
+.wrapper-white {
+  background-color: #fdfdfd;
+  width: 100%;
+  padding: 120px 0;
+}
+
+.wrapper-beige {
+  background-color: #FFF5E3;
+  width: 100%;
+  padding: 120px 0;
+
+}
+
+.no-shadow {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0);
+  box-shadow: 0px -5px 6px 0px rgba(0,0,0,0);
+}
+
+.work {
+  max-width: 400px;
+}
+
+.work-subheader {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.work-link {
+  font-weight: 500;
+  color: #2e61ff;
+}
+
+.work-link:hover {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Animation */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+/* Contact */
+
+.wrapper-contact {
+  background-color: #2e61ff;
+  width: 100%;
+  padding: 60px 0;
+  -webkit-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
+  box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
+}
+
+.contact {
+  text-align: center;
+  color: #fdfdfd;
+}
+
+/*post */
+
+.aoe-header {
+  background-image: url(../img/aoe/aoe-header.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  text-align: center;
+  padding: 120px 0;
+  min-height: 200px;
+}
+
+.content-img {
+  max-width: 50rem;
+}
+
+.content-img-align {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  max-width: 100%;
+}
+
+.content > h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.content {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+.content p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.content b {
+  color: #333;
+  font-weight: 500;
+}
+
+
+.img-card {
+  margin-bottom: 1.5em;
+  -webkit-box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px -2px 10px 0px rgba(0,0,0,0.2);
+}
+
+.img-card-content {
+  padding: 1em;
+}
+
+.post {
+  min-height: 160px;
+  padding: 20px 0px 20px 0px;
+  font-size: 1.6rem;
+  color:#555;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 1 auto;
+}
