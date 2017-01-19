@@ -4,20 +4,17 @@
 /* Basic Styles */
 html {
   font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
 
 }
-@media (min-width: 50em) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 body {
   padding: 0rem 0rem 0rem 0rem;
   line-height: 1.5;
 }
+
 
 p {
   margin: 0 0 1rem;
@@ -96,7 +93,7 @@ a:hover {
 
 @media (min-width: 52em) {
   .masthead {
-    padding-top: .1rem;
+    padding-top: 0rem;
     text-align: right;
   }
   .masthead-title {
@@ -157,6 +154,11 @@ a:hover {
   max-width: 400px;
 }
 
+.work-img {
+  max-width: 400px;
+  height: auto;
+}
+
 .work-subheader {
   text-transform: uppercase;
   font-weight: 500;
@@ -172,6 +174,23 @@ a:hover {
   font-weight: 500;
   color: #555;
 }
+
+/*Flex*/
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 50%;
+
+}
+
+
+
+
 
 /* Animation */
 .hvr-grow {
@@ -279,4 +298,17 @@ a:hover {
 
 .item {
   flex: 0 1 auto;
+}
+
+@media screen and (max-width: 48rem) {
+  .container {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .contact > h1 {
+    font-size: 1.8rem;
+  }
+  .work {
+    m
+  }
 }
