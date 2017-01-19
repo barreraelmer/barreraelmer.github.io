@@ -177,6 +177,9 @@ a:hover {
 
 /*Flex*/
 .row {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,6 +187,10 @@ a:hover {
 }
 
 .col {
+  -webkit-box-flex: 1 0 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 1 0 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1 0 50%;           /* IE 10 */
+
   flex: 1 0 50%;
 
 }
