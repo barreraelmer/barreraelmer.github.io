@@ -61,6 +61,14 @@ a:hover {
 .align-right {
   text-align: right;
 }
+
+hr.break {
+    margin: 2rem 2rem;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 /* Header */
 
 /* Masthead */
@@ -190,12 +198,22 @@ a:hover {
   -webkit-box-flex: 1 0 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
   -webkit-flex: 1 0 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
   -ms-flex: 1 0 50%;           /* IE 10 */
-
   flex: 1 0 50%;
-
 }
 
+.col-post {
+  -webkit-box-flex: 1 0 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: 1 0 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: 1 0 50%;           /* IE 10 */
+  flex: 1 0 50%;
+}
 
+.col-post > p {
+  max-width: 23rem;
+}
+.top-align {
+  align-items: flex-start;
+}
 
 
 
@@ -318,6 +336,12 @@ a:hover {
   flex: 0 1 auto;
 }
 
+.highlight {
+  display: inline-block;
+  margin-left: 2rem;
+  color: #2e61ff;
+}
+
 @media screen and (max-width: 48rem) {
   .container {
     padding: 0rem 1rem 0rem 1rem;
@@ -327,6 +351,6 @@ a:hover {
     font-size: 1.8rem;
   }
   .work {
-    m
+
   }
 }
