@@ -6,15 +6,14 @@ html {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   color: #333;
-
 }
-
 
 body {
   padding: 0rem 0rem 0rem 0rem;
   line-height: 1.5;
-}
+  font-family: 'Work Sans', sans-serif;
 
+}
 
 p {
   margin: 0 0 1rem;
@@ -26,7 +25,7 @@ p {
 h1 {
   font-size: 2rem;
   font-weight: 500;
-
+  color: #333;
 }
 
 h2 {
@@ -44,6 +43,12 @@ h4 {
   font-size: .8rem;
 }
 
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
 a {
   text-decoration: none;
   color: #4a4a4a;
@@ -51,11 +56,7 @@ a {
 
 a:hover {
   color: #2e61ff;
-}
-
-.container {
-  max-width: 50rem;
-  margin: 0 auto;
+  text-decoration: none;
 }
 
 .align-right {
@@ -69,10 +70,10 @@ hr.break {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* Header */
 
 /* Masthead */
 .masthead {
+  margin-top: -3rem;
   margin-bottom: .8rem;
   font-size: 1rem;
   color: #333;
@@ -86,16 +87,16 @@ hr.break {
   margin: 3rem auto;
 }
 
-.nav {
+.navigation {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
-.nav li {
+.navigation li {
   display: inline-block;
   font-weight: 500;
 }
-.nav li + li {
+.navigation li + li {
   margin-left: 1.2rem;
 }
 
@@ -109,29 +110,41 @@ hr.break {
   }
 }
 
+.navigation {
+  padding-left: 0;
+  margin-bottom: 4rem;
+  list-style: none;
+}
+.navigation li {
+  display: inline-block;
+  font-weight: 500;
+}
+.navigation li + li {
+  margin-left: 1.2rem;
+}
+
+
 /* Intro */
 .intro {
-  margin-top: -80px;
-}
-.intro > h1 {
-  font-size: 3.5rem;
-}
-
-.intro > h3 {
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.intro > h3 > a {
+.intro > a {
   color: #2e61ff;
   font-weight: 500;
 }
 
-.intro > h3 > a:hover {
+.intro > a:hover {
   color: #555;
+  text-decoration: none;
 }
 
 /* Work */
 
+.container {
+  max-width: 50rem;
+}
 .wrapper-blue {
   background-color: #f3f4f8;
   width: 100%;
@@ -139,10 +152,14 @@ hr.break {
 
 }
 
+.bluebg {
+  background-color: #fdfdfd;
+}
+
 .wrapper-white {
   background-color: #fdfdfd;
   width: 100%;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .wrapper-beige {
@@ -152,25 +169,22 @@ hr.break {
 
 }
 
+}
+
 .no-shadow {
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
   -moz-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0);
   box-shadow: 0px -5px 6px 0px rgba(0,0,0,0);
 }
 
-.work {
-  max-width: 400px;
-}
-
-.work-img {
-  max-width: 400px;
-  height: auto;
-}
-
 .work-subheader {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+.work-header {
+  margin: 1.5rem 0rem;
 }
 
 .work-link {
@@ -183,24 +197,6 @@ hr.break {
   color: #555;
 }
 
-/*Flex*/
-.row {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.col {
-  -webkit-box-flex: 1 0 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
-  -webkit-flex: 1 0 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
-  -ms-flex: 1 0 50%;           /* IE 10 */
-  flex: 1 0 50%;
-}
-
 .col-post {
   -webkit-box-flex: 1 0 50%;   /* OLD - iOS 6-, Safari 3.1-6 */
   -webkit-flex: 1 0 50%;       /* Safari 6.1+. iOS 7.1+, BB10 */
@@ -211,11 +207,6 @@ hr.break {
 .col-post > p {
   max-width: 23rem;
 }
-.top-align {
-  align-items: flex-start;
-}
-
-
 
 /* Animation */
 .hvr-grow {
@@ -239,13 +230,14 @@ hr.break {
 .wrapper-contact {
   background-color: #2e61ff;
   width: 100%;
+  height: auto;
   padding: 60px 0;
   -webkit-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
   -moz-box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
   box-shadow: 0px -5px 6px 0px rgba(0,0,0,0.08);
 }
 
-.contact {
+.contact > h1{
   text-align: center;
   color: #fdfdfd;
 }
@@ -258,9 +250,8 @@ hr.break {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  text-align: center;
   padding: 120px 0;
-  min-height: 200px;
+  min-height: 400px;
 }
 
 .mm-header {
@@ -269,9 +260,9 @@ hr.break {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  text-align: center;
+
   padding: 120px 0;
-  min-height: 200px;
+  min-height: 400px;
 }
 
 .content-img {
@@ -293,7 +284,7 @@ hr.break {
 
 .content {
   line-height: 1.5;
-  padding: 4em 1em;
+  padding: 4em 0em;
 }
 
 .content p {
@@ -340,17 +331,4 @@ hr.break {
   display: inline-block;
   margin-left: 2rem;
   color: #2e61ff;
-}
-
-@media screen and (max-width: 48rem) {
-  .container {
-    padding: 0rem 1rem 0rem 1rem;
-  }
-
-  .contact > h1 {
-    font-size: 1.8rem;
-  }
-  .work {
-
-  }
 }
