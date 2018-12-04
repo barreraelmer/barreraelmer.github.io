@@ -60,6 +60,10 @@ p {
   line-height: 150%;
 }
 
+a {
+  text-decoration: underline;
+}
+
 ul {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -79,7 +83,7 @@ li {
   padding-bottom: 8px;
   font-family: 'GT Cinetype', sans-serif;
   color: #4a4a4a;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -102,7 +106,8 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
+  height: 65vh;
+  padding-top: 0px;
   padding-bottom: 36px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -151,7 +156,7 @@ figcaption {
 }
 
 .p-hero {
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   font-family: 'GT Cinetype', sans-serif;
   color: #4a4a4a;
   font-size: 18px;
@@ -190,7 +195,7 @@ figcaption {
 
 .section-fb {
   margin-bottom: 16px;
-  padding: 64px 0px;
+  padding: 72px 0px;
   background-color: #b9ceff;
 }
 
@@ -243,24 +248,23 @@ figcaption {
 }
 
 .section-wd {
-  overflow: hidden;
   margin-bottom: 16px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-color: #fceabb;
 }
 
 .section-mm {
   margin-bottom: 16px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-color: #d0eae4;
 }
 
 .section-d {
   margin-bottom: 16px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-color: #ffd0be;
 }
 
@@ -284,12 +288,13 @@ figcaption {
 
 .image {
   position: absolute;
+  left: 450px;
   right: -50px;
   bottom: -40px;
 }
 
 .footer {
-  padding: 12px 0px;
+  padding: 64px 0px;
   background-color: #1d1d1d;
   color: #333;
 }
@@ -335,6 +340,7 @@ figcaption {
 }
 
 .image-2 {
+  max-width: 100%;
   padding-right: 12px;
 }
 
@@ -346,9 +352,9 @@ figcaption {
   text-decoration: underline;
 }
 
-.div-block-3 {
-  padding-right: 20px;
-  padding-left: 20px;
+.hero-div {
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
 .heading {
@@ -700,16 +706,26 @@ figcaption {
   background-image: linear-gradient(180deg, #fafafa, #fafafa);
 }
 
-.section-2 {
-  height: 70vh;
-  background-image: url('../images/hero-image.png'), -webkit-gradient(linear, left top, left bottom, from(#fceabb), to(#fceabb));
-  background-image: url('../images/hero-image.png'), linear-gradient(180deg, #fceabb, #fceabb);
+.mm-hero {
+  display: block;
+  min-height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/Matches-Macbook-Pro-2016.png'), -webkit-gradient(linear, left top, left bottom, from(#d0eae4), to(#d0eae4));
+  background-image: url('../images/Matches-Macbook-Pro-2016.png'), linear-gradient(180deg, #d0eae4, #d0eae4);
   background-position: 50% 50%, 0px 0px;
   background-size: contain, auto;
   background-repeat: no-repeat, repeat;
 }
 
-.section-2.fb-cover {
+.mm-hero.fb-cover {
   background-image: url('../images/thumb-3.png'), -webkit-gradient(linear, left top, left bottom, from(#b9ceff), to(#b9ceff));
   background-image: url('../images/thumb-3.png'), linear-gradient(180deg, #b9ceff, #b9ceff);
   background-position: 50% 50%, 0px 0px;
@@ -752,9 +768,9 @@ figcaption {
   padding-bottom: 0px;
 }
 
-.section-4 {
-  padding-top: 124px;
-  padding-bottom: 124px;
+.project-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
 }
@@ -764,23 +780,44 @@ figcaption {
   font-family: 'GT Cinetype', sans-serif;
   color: #828282;
   font-size: 18px;
+  line-height: 20px;
 }
 
 .test-content h4 {
-  font-size: 20px;
+  margin-bottom: 8px;
+  font-size: 22px;
 }
 
 .test-content p {
-  font-size: 18px;
-  line-height: 150%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 170%;
 }
 
-.section-5 {
+.test-content blockquote {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-style: none none none solid;
+  border-left-color: #eee;
+  font-family: 'GT Cinetype', sans-serif;
+  color: #4a4a4a;
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.test-content a {
+  color: #333;
+}
+
+.project-image {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 100px 64px;
+  padding: 80px 64px 64px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -821,6 +858,25 @@ figcaption {
   font-size: 16px;
 }
 
+.p-hero-link {
+  border-bottom: 1px solid #4a4a4a;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.shadow {
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, .14);
+}
+
+.wd-hero {
+  height: 70vh;
+  background-image: url('../images/hero-image.png'), -webkit-gradient(linear, left top, left bottom, from(#fceabb), to(#fceabb));
+  background-image: url('../images/hero-image.png'), linear-gradient(180deg, #fceabb, #fceabb);
+  background-position: 50% 50%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat;
+}
+
 @media (max-width: 991px) {
   .card-p {
     max-width: 90%;
@@ -839,6 +895,10 @@ figcaption {
   }
   .paragraph {
     max-width: 100%;
+  }
+  .project-image {
+    padding-right: 8px;
+    padding-left: 8px;
   }
 }
 
@@ -862,7 +922,7 @@ figcaption {
     padding-right: 0px;
     padding-bottom: 24px;
   }
-  .div-block-3 {
+  .hero-div {
     padding-right: 8px;
     padding-left: 8px;
   }
@@ -877,6 +937,12 @@ figcaption {
     background-position: 50% 50%, 0px 0px;
     background-size: 500px, auto;
     background-repeat: no-repeat, repeat;
+  }
+  .mm-hero {
+    background-image: url('../images/hero-image.png'), -webkit-gradient(linear, left top, left bottom, from(#fceabb), to(#fceabb));
+    background-image: url('../images/hero-image.png'), linear-gradient(180deg, #fceabb, #fceabb);
+    background-position: 50% 50%, 0px 0px;
+    background-size: auto 100%, auto;
   }
 }
 
